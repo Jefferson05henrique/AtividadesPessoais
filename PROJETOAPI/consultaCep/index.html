@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PROJETOAPI/css/style.css">
+
+    <title>Consulta CEP</title>
+</head>
+
+
+<body>
+    
+    <header>
+        <h1>CEP BRASIL</h1>
+    </header>
+
+    <main>
+
+        <h2>Consulta CEP</h2>
+
+        <p>Digite um CEP para consultar o endereço.</p>
+
+        <form action="">
+
+            <label for="cep">CEP: </label>
+
+            <input type="text" id="cep" placeholder="Digite seu CEP" maxlength="9"> <!-- maxlength e o tanto de caracteres quee pode escrever no bloco, no caso nove -->
+
+            <button type="submit">consultar</button>
+
+        </form>
+<!-- ctrl + k ctrl + c comenta -->
+ 
+        <section>
+
+            <h3>Endereço encontrado</h3>
+<!-- o SPAN é um elemento usado para envolver uma pequena parte de conteúdo, aqui ficara os nomes dos logradouros, bairros, cidades, estados que o js ira buscar -->
+            <p>Logradouro: <span id="logradouro"></span></p>
+
+            <p>Bairro: <span id="bairro"></span></p>
+
+            <p>Cidade: <span id="cidade"></span></p>
+
+            <p>Estado: <span id="estado"></span></p>
+            
+            <p>CEP: <span id="resultado-cep"></span></p>
+            
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p>Trabalho feito por Jefferson Henrique de Oliveira Reis</p>
+    </footer>
+    
+</body>
+
+</html>
